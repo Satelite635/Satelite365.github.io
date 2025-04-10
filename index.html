@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .game-title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .menu-container h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .menu-button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      margin: 10px auto;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      color: #4e54c8;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .menu-button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <div class="game-title">THERE IS NO MATHEMATIC</div>
+    <h1>Main Menu</h1>
+    <button class="menu-button" id="startBtn">Mulai</button>
+    <button class="menu-button" id="tutorialBtn">Tutorial</button>
+  </div>
+
+  <script>
+    document.getElementById('startBtn').addEventListener('click', function() {
+      window.location = '../Chapter_1/SystemBattle/BattleSystemCh1.html'; // ganti ke halaman game
+    });
+
+    document.getElementById('tutorialBtn').addEventListener('click', function() {
+      window.location = 'Tutorial.html'; // ganti ke halaman tutorial
+    });
+  </script>
+
+</body>
+</html>
