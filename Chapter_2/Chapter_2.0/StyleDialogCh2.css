@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #ff4081;
+    --background-opacity: 0.8;
+    --dialog-padding: 20px;
+    --button-padding: 12px 20px;
+    --character-width: 300px;
+    --character-bottom: 30px;
+    --character-side-margin: 5vw;
+    --dialog-font-size: 1em;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/Shishiro-Botan_pr-img_01.png') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1280px;
+    max-height: 720px;
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .character {
+    position: absolute;
+    bottom: var(--character-bottom);
+    width: var(--character-width);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .left {
+    left: var(--character-side-margin);
+  }
+
+  .center {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Bisa diubah jika perlu berada di depan/belakang */
+  }
+  
+  
+  .right {
+    right: var(--character-side-margin);
+  }
+  
+  .dialog-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, var(--background-opacity));
+    color: white;
+    padding: var(--dialog-padding);
+    border-radius: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--dialog-font-size);
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .controls {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--button-padding);
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e91e63;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    :root {
+      --character-width: 200px;
+      --character-bottom: 10px;
+      --character-side-margin: 2vw;
+      --dialog-font-size: 0.9em;
+      --dialog-padding: 15px;
+      --button-padding: 10px 15px;
+    }
+  }

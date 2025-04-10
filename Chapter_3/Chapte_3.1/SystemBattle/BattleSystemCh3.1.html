@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Battle UI</title>
+    <link rel="stylesheet" href="BattleStyleCh3.1.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="battlefield">
+            <div class="character-left">
+                <img id="playerGif" src="Nearl.png" alt="Player">
+                <div class="status-bar">
+                    <div>Player</div>
+                    <div class="bar hp-bar" id="playerHpBar"></div>
+                    <div class="bar sp-bar" id="playerSpBar"></div>
+                </div>
+            </div>
+            <div class="character-right">
+                <img id="enemyGif" src="werewolfidle.png" alt="Enemy">
+                <div class="status-bar">
+                    <div>Enemy</div>
+                    <div class="bar hp-bar" id="enemyHpBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons" id="buttonContainer">
+            <button onclick="startDeployAnimation()">Start</button>
+        </div>
+        <div class="math-container" id="mathContainer"></div>
+    </div>
+
+    <script src="systemch3.1.js"></script>
+</body>
+</html>

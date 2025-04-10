@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.game-container {
+    border: 5px solid #333;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #e0e7ff, #f0f0f0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+}
+
+.battlefield {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.character-left, .character-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    size: 10px;
+}
+
+.status-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bar {
+    height: 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+    position: relative;
+}
+
+.hp-bar {
+    background-color: #4CAF50;
+    width: 80%;
+}
+
+.sp-bar {
+    background-color: #5A43E0;
+    width: 70%;
+}
+
+.character-image-large {
+    height: 10px;
+    width: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #64748b;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    background-color: #475569;
+}
+
+.math-container {
+    margin-top: 50px;
+    padding: 20px;
+    border: 3px solid #333;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+}
+
+.next-stage-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.next-stage-button {
+    padding: 15px 40px;
+    background-color: #10b981; /* Warna hijau untuk kesan kemenangan */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.5);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-stage-button:hover {
+    background-color: #059669;
+    transform: scale(1.05); /* Efek zoom untuk menarik perhatian */
+}
